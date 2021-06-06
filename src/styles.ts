@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
-export const SmthBtn = styled.button`
-  width: 360px;
-  height: 36px;
-  background: #111;
-  color: #fff;
-`
+export const ShipStyle = styled.div`
+  margin-bottom: 7px;
+`;
+
+export const Image = styled.img`
+  width: 300px;
+  height: 250px;
+`;

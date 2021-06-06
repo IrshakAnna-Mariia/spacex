@@ -5,7 +5,6 @@ export interface Launch{
         site_name_long: string;
     }
     links: {
-        article_link: string;
         video_link: string;
     }
     rocket: {
@@ -17,12 +16,12 @@ export interface Launch{
                     reuse_count: number;
                     status: string;
                 }
-            }
+            } []
         }
     }
     ships: {
         name: string;
         home_port: string;
         image: string;
-    }
+    } []
 }

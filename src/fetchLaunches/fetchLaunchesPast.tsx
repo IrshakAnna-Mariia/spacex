@@ -9,6 +9,9 @@ const LAUNCHES_PAST = gql`
             launch_site {
                 site_name_long
             }
+            links {
+                video_link
+            }
             rocket {
                 rocket_name
                 first_stage {
@@ -32,7 +35,7 @@ const LAUNCHES_PAST = gql`
 
 export const useGetLaunchesPast = () : Launch[] | undefined => {
     const {data} = useQuery(LAUNCHES_PAST, {
-        variables: {limit: 10}
+        variables: {limit: 20}
     });
     return data?.launchesPast;
 }
