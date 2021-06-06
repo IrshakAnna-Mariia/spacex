@@ -2,7 +2,7 @@ import React from 'react';
 import {useGetLaunchesPast} from './fetchLaunches/fetchLaunchesPast';
 import {useGetLaunchesUpcoming} from './fetchLaunches/fetchLaunchesUpcoming';
 import {AppBar, Container, Toolbar, Typography} from "@material-ui/core";
-import LaunchesView from "./LaunchesView";
+import LaunchesView from "./components/LaunchesView";
 
 const App: React.FunctionComponent = () => {
     const launchesPast = useGetLaunchesPast();
